@@ -121,6 +121,26 @@ export default function ProductDetailPage() {
               </div>
             </div>
 
+            {(product.spec || product.packaging) && (
+              <div className="mt-8">
+                <h2 className="font-display text-lg font-semibold text-slate-900">Specifications</h2>
+                <div className="mt-3 space-y-2 text-sm text-slate-600">
+                  {product.spec && (
+                    <p className="flex gap-2">
+                      <span className="w-24 shrink-0 font-medium text-slate-500">Spec</span>
+                      <span>{product.spec}</span>
+                    </p>
+                  )}
+                  {product.packaging && (
+                    <p className="flex gap-2">
+                      <span className="w-24 shrink-0 font-medium text-slate-500">Packaging</span>
+                      <span>{product.packaging}</span>
+                    </p>
+                  )}
+                </div>
+              </div>
+            )}
+
             <div className="mt-8 flex flex-wrap gap-4">
               <button onClick={() => goToInquiry('sample')} className="btn-primary">
                 Request Sample

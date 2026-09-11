@@ -69,13 +69,33 @@ export default function WhyChooseUs() {
           </div>
 
           <div className="relative">
-            <div className="overflow-hidden rounded-3xl border border-white/10 shadow-2xl">
-              <img
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80"
-                alt="GMP certified supplement manufacturing facility"
-                loading="lazy"
-                className="aspect-[4/3] w-full object-cover"
-              />
+            <div className="grid gap-4">
+              <div className="overflow-hidden rounded-3xl border border-white/10 shadow-2xl">
+                <img
+                  src="/images/factory/factory-overview.webp"
+                  alt="GMP certified supplement manufacturing facility"
+                  loading="lazy"
+                  className="aspect-[16/10] w-full object-cover"
+                />
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="overflow-hidden rounded-2xl border border-white/10 shadow-xl">
+                  <img
+                    src="/images/factory/factory-line.webp"
+                    alt="Dietary supplement production line"
+                    loading="lazy"
+                    className="aspect-[4/3] w-full object-cover"
+                  />
+                </div>
+                <div className="overflow-hidden rounded-2xl border border-white/10 shadow-xl">
+                  <img
+                    src="/images/factory/team.webp"
+                    alt="DUOZI manufacturing team and company culture"
+                    loading="lazy"
+                    className="aspect-[4/3] w-full object-cover"
+                  />
+                </div>
+              </div>
             </div>
             <div className="absolute -bottom-5 -left-5 hidden rounded-2xl border border-brand-100 bg-white px-5 py-4 shadow-soft sm:block">
               <p className="font-display text-lg font-bold text-brand-700">GMP Certified</p>
@@ -87,4 +107,5 @@ export default function WhyChooseUs() {
     </section>
   )
 }
+
 
