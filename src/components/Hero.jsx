@@ -11,7 +11,7 @@ export default function Hero({ onViewProducts, onGetQuote }) {
   return (
     <section className="relative isolate overflow-hidden bg-brand-900">
       <img
-        src="/images/hero.svg"
+        src="https://images.unsplash.com/photo-1550572017-edd951b55104?auto=format&fit=crop&w=1600&q=80"
         alt="Premium health supplement manufacturing"
         className="absolute inset-0 -z-10 h-full w-full object-cover"
         loading="eager"
@@ -61,4 +61,5 @@ export default function Hero({ onViewProducts, onGetQuote }) {
     </section>
   )
 }
+
 

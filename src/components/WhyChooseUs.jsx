@@ -71,7 +71,7 @@ export default function WhyChooseUs() {
           <div className="relative">
             <div className="overflow-hidden rounded-3xl border border-white/10 shadow-2xl">
               <img
-                src="/images/factory.svg"
+                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80"
                 alt="GMP certified supplement manufacturing facility"
                 loading="lazy"
                 className="aspect-[4/3] w-full object-cover"
@@ -87,3 +87,4 @@ export default function WhyChooseUs() {
     </section>
   )
 }
+
