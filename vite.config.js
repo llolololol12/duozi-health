@@ -8,4 +8,10 @@ export default defineConfig({
     target: 'es2019',
     assetsInlineLimit: 4096,
   },
+  // Allow Railway's generated host (*.up.railway.app) to reach the preview server.
+  // Behind Railway's edge, the container is only reachable via that domain.
+  preview: {
+    host: true,
+    allowedHosts: true,
+  },
 })
